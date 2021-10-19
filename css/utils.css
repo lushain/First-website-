@@ -11,9 +11,11 @@ body{
   margin:0;
 }
 
-header {
-  display: inline-block;
-}
 section{
-   margin-left: 8vw;
+  margin-left: 8vw;
+  scroll-snap-align: start;
+}
+
+html {
+  scroll-snap-type: y mandatory;
 }

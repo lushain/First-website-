@@ -1,0 +1,5 @@
+section#AI{
+  height: 100vh;
+  width: calc(100vw- 8vw);
+  background-color: #0040ff;
+}

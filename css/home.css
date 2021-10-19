@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300&display=swap');
+
 section#home{
   background-color: #212121;
   height: 100vh;
@@ -6,10 +8,17 @@ section#home{
 
 .headings{
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  padding: 5vh 1vw;
+  font-family: 'Fira Sans', sans-serif;
 }
 
 h1{
-  margin:0;
+  color: #bfbfbf;
+  font-size: 3em;
+}
+h2{
+  color: #d1385a
 }
