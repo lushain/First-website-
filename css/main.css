@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+footer{
+  font-family: 'Roboto', sans-serif;
+  background-color: black;
+  color: grey;
+  height: 150vh;
+  /* position: fixed;
+  bottom: 0; */
+  width: 100%;
+}
+footer p{
+  margin: 5px;
+}
+
+nav {
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  width: 8vw;
+  background-color: #212121;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+nav ul li{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  cursor: pointer;
+}
+/* nav ul li:nth-child(1){
+  background-color: #7102a1
+} */
+
+nav ul li.exc{
+  padding: 3vh 1vw;
+  margin: 3vh 5px;
+}
+
+nav ul li:nth-child(2){
+  background-color: #0040ff
+}
+nav ul li:nth-child(3){
+  background-color: #b57c00
+}
+nav ul li:nth-child(4){
+  background-color: #10a100
+}
+nav ul li:nth-child(5){
+  background-color: #8c1212
+}
+nav ul li:nth-child(6){
+  background-color: #636363
+}
+
+nav ul li a{
+  font-family: 'Ubuntu', sans-serif;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 15px;
+  color: #dedede;
+  padding: 3px;
+}

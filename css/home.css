@@ -1,0 +1,15 @@
+section#home{
+  background-color: #212121;
+  height: 100vh;
+  width: calc(100vw- 8vw)
+}
+
+.headings{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h1{
+  margin:0;
+}
