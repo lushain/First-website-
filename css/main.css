@@ -32,43 +32,100 @@ nav {
   justify-content: center;
   align-items: center;
 }
-nav ul li{
+nav li{
   display: flex;
   justify-content: center;
   align-items: center;
   border-radius: 10px;
   cursor: pointer;
 }
-/* nav ul li:nth-child(1){
-  background-color: #7102a1
-} */
 
-nav ul li.exc{
+nav li.exc{
   padding: 3vh 1vw;
   margin: 3vh 5px;
 }
 
-nav ul li:nth-child(2){
-  background-color: #0040ff
-}
-nav ul li:nth-child(3){
-  background-color: #b57c00
-}
-nav ul li:nth-child(4){
-  background-color: #10a100
-}
-nav ul li:nth-child(5){
-  background-color: #8c1212
-}
-nav ul li:nth-child(6){
-  background-color: #636363
+nav li:nth-child(1){
+  background-color: #212121;
 }
 
-nav ul li a{
+nav li:nth-child(2){
+  background-color: #0040ff;
+}
+nav li:nth-child(3){
+  background-color: #b57c00;
+}
+nav li:nth-child(4){
+  background-color: #10a100;
+}
+nav li:nth-child(5){
+  background-color: #8c1212;
+}
+nav li:nth-child(6){
+  background-color: #636363;
+}
+
+nav a{
   font-family: 'Ubuntu', sans-serif;
   text-decoration: none;
   font-weight: bold;
   font-size: 15px;
   color: #dedede;
   padding: 3px;
+}
+nav img{
+  width: 50px;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300&display=swap');
+
+section#home{
+  background-color: #212121;
+  width: calc(100vw- 8vw)
+}
+
+.headings{
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  padding: 5vh 1vw;
+  font-family: 'Fira Sans', sans-serif;
+}
+
+h1{
+  color: #bfbfbf;
+  font-size: 3em;
+}
+h2{
+  color: #d1385a
+}
+
+
+section#AI{
+  width: calc(100vw- 8vw);
+  background-color: #0040ff;
+}
+
+
+section#internet{
+  background-color: #b57c00;
+  width: calc(100vw- 8vw);
+}
+
+section#translation{
+  background-color: #10a100;
+  width: calc(100vw- 8vw);
+}
+
+
+section#money{
+  background-color: #8c1212;
+  width: calc(100vw- 8vw);
+}
+
+
+section#cloud{
+  background-color: #636363;
+  width: calc(100vw- 8vw);
 }
