@@ -9,7 +9,7 @@ const elems = document.getElementsByClassName("nav-icon");
 Array.from(elems).forEach(element => {
   element.onclick = function() {scroll(element)};
 });
-//
+
 window.addEventListener('scroll',function(){
   let offset = window.pageYOffset;
   const navBar = document.getElementById("nav-bar");
