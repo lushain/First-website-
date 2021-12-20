@@ -20,3 +20,19 @@ section{
 html {
   scroll-snap-type: y mandatory;
 }
+
+body::-webkit-scrollbar{
+  width: 11px;
+}
+body::-webkit-scrollbar-track{
+  background: #212121;
+}
+body::-webkit-scrollbar-thumb{
+  background: #7c838f;
+  border-radius: 5px;
+}
+
+body::-webkit-scrollbar-thumb:hover{
+  background: #9ba4b3;
+  border-radius: 2px;
+}

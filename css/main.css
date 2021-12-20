@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300&display=swap');
 
 *{
   margin: 0;
@@ -31,6 +32,7 @@ nav {
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: 200ms ease;
 }
 nav li{
   display: flex;
@@ -38,11 +40,17 @@ nav li{
   align-items: center;
   border-radius: 10px;
   cursor: pointer;
+  transition: 200ms ease;
+  transition-delay: 200ms;
 }
 
 nav li.exc{
-  padding: 3vh 1vw;
-  margin: 3vh 5px;
+  width: 0px;
+  height:0px;
+  padding: 4vh 9px;
+  margin: 8vh 5px 8vh 0px;
+  transition: 200ms ease;
+  transition-delay: 50ms;
 }
 
 nav li:nth-child(1){
@@ -69,15 +77,34 @@ nav a{
   font-family: 'Ubuntu', sans-serif;
   text-decoration: none;
   font-weight: bold;
-  font-size: 15px;
+  font-size: 10px;
   color: #dedede;
   padding: 3px;
+  display: none;
+  transition: 500ms;
+  transition-delay: 1s;
 }
 nav img{
   width: 50px;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300&display=swap');
+/* nav:hover a{
+  display: block;
+}
+
+nav:hover li.exc{
+  padding: 2vh 9px;
+  margin: 5vh 0px 5vh 10px;
+}
+*/
+nav li:hover {
+    padding: 8vh 3vw;
+    margin: 5vh 0px 5vh 10px;
+}
+
+nav li:hover > *:first-child {
+    display: block;
+}
 
 section#home{
   background-color: #212121;
@@ -100,7 +127,6 @@ h1{
 h2{
   color: #d1385a
 }
-
 
 section#AI{
   width: calc(100vw- 8vw);
