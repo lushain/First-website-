@@ -88,23 +88,14 @@ nav img{
   width: 50px;
 }
 
-/* nav:hover a{
-  display: block;
-}
-
-nav:hover li.exc{
-  padding: 2vh 9px;
-  margin: 5vh 0px 5vh 10px;
-}
-*/
-nav li:hover {
+/* nav li:hover {
     padding: 8vh 3vw;
     margin: 5vh 0px 5vh 10px;
 }
 
 nav li:hover > *:first-child {
     display: block;
-}
+} */
 
 section#home{
   background-color: #212121;
