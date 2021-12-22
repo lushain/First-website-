@@ -1,6 +1,12 @@
 const elems = document.getElementsByClassName("nav-icon");
 const sections = document.getElementsByTagName('section');
 const navbar = document.getElementById('nav-bar');
+let element = null
+
+var current_dict = {
+  prev_current: undefined,
+  current: undefined,
+}
 
 function scroll(element) {
   var temp = element.id
@@ -9,18 +15,22 @@ function scroll(element) {
 }
 
 function mouseover(element){
-  element.style.padding = "8vh 3vw"
-  element.style.margin = "5vh 0px 5vh 10px"
+  element.style.padding = "7vh 3vw"
+  element.style.margin = "5vh 0px 5vh 0px"
   let sub = element.firstElementChild
   sub.style.display = "block"
 }
 function mouseout(element){
-  element.style.width = "0px"
-  element.style.height = "0px"
-  element.style.padding = "4vh 9px"
-  element.style.margin = "8vh 5px 8vh 0px"
-  let sub = element.firstElementChild
-  sub.style.display = "none"
+  if (element.id == current_dict['current'].id+'-icon') {
+    return
+  }else {
+    element.style.width = "0px"
+    element.style.height = "0px"
+    element.style.padding = "4vh 9px"
+    element.style.margin = "6vh 5px 6vh 10px"
+    let sub = element.firstElementChild
+    sub.style.display = "none"
+  }
 }
 
 const options = {
@@ -31,9 +41,20 @@ const options = {
 const observer = new IntersectionObserver(function(entries,observer){
   entries.forEach(entry => {
     if (entry.isIntersecting){
+      if (current_dict['prev_current'] !== undefined) {
+        current_dict['prev_current'] = element
+      }
       let colour = window.getComputedStyle(entry.target).backgroundColor
       // let colour = entry.target.style.backgroundColor
       navbar.style.backgroundColor = colour;
+      current_dict['current'] = entry.target
+      element = document.getElementById(current_dict['current'].id+"-icon")
+      mouseover(element)
+      if (current_dict['prev_current'] == undefined) {
+        current_dict['prev_current'] = element
+      } else if (current_dict['prev_current'] !== element && current_dict['prev_current'] !== undefined) {
+        mouseout(current_dict['prev_current'])
+      }
     }
   });
 },options);

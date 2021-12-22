@@ -5,7 +5,6 @@
 *{
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
 }
 
 footer{
@@ -33,6 +32,7 @@ nav {
   justify-content: center;
   align-items: center;
   transition: 200ms ease;
+  padding-left: 10px;
 }
 nav li{
   display: flex;
@@ -41,14 +41,14 @@ nav li{
   border-radius: 10px;
   cursor: pointer;
   transition: 200ms ease;
-  transition-delay: 200ms;
+  transition-delay: 300ms;
 }
 
 nav li.exc{
   width: 0px;
   height:0px;
   padding: 4vh 9px;
-  margin: 8vh 5px 8vh 0px;
+  margin: 8vh 5px 8vh 10px;
   transition: 200ms ease;
   transition-delay: 50ms;
 }
@@ -86,6 +86,7 @@ nav a{
 }
 nav img{
   width: 50px;
+  transition-delay: 400ms;
 }
 
 /* nav li:hover {
