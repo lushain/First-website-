@@ -48,7 +48,7 @@ nav li.exc{
   width: 0px;
   height:0px;
   padding: 4vh 9px;
-  margin: 8vh 5px 8vh 10px;
+  margin: 5vh 5px 5vh 10px;
   transition: 200ms ease;
   transition-delay: 50ms;
 }
@@ -58,19 +58,19 @@ nav li:nth-child(1){
 }
 
 nav li:nth-child(2){
-  background-color: #0040ff;
+  background-color: #F59CA9;
 }
 nav li:nth-child(3){
-  background-color: #b57c00;
+  background-color: #758BFD;
 }
 nav li:nth-child(4){
-  background-color: #10a100;
+  background-color: #735CDD;
 }
 nav li:nth-child(5){
-  background-color: #8c1212;
+  background-color: #0075F2;
 }
 nav li:nth-child(6){
-  background-color: #636363;
+  background-color: #FF4365;
 }
 
 nav a{
@@ -122,28 +122,28 @@ h2{
 
 section#AI{
   width: calc(100vw- 8vw);
-  background-color: #0040ff;
+  background-color: #F59CA9;
 }
 
 
 section#internet{
-  background-color: rgb(181, 124, 0);
+  background-color: #758BFD;
   width: calc(100vw- 8vw);
 }
 
 section#translation{
-  background-color: #10a100;
+  background-color: #735CDD;
   width: calc(100vw- 8vw);
 }
 
 
 section#money{
-  background-color: #8c1212;
+  background-color: #0075F2;
   width: calc(100vw- 8vw);
 }
 
 
 section#cloud{
-  background-color: #636363;
+  background-color: #FF4365;
   width: calc(100vw- 8vw);
 }

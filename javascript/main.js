@@ -15,19 +15,19 @@ function scroll(element) {
 }
 
 function mouseover(element){
-  element.style.padding = "7vh 3vw"
-  element.style.margin = "5vh 0px 5vh 0px"
+  element.style.padding = "6vh 3vw"
+  element.style.margin = "4vh 0px 5vh 0px"
   let sub = element.firstElementChild
   sub.style.display = "block"
 }
 function mouseout(element){
-  if (element.id == current_dict['current'].id+'-icon') {
+  if (element.id === current_dict['current'].id+'-icon') {
     return
   }else {
     element.style.width = "0px"
     element.style.height = "0px"
     element.style.padding = "4vh 9px"
-    element.style.margin = "6vh 5px 6vh 10px"
+    element.style.margin = "5vh 5px 5vh 10px"
     let sub = element.firstElementChild
     sub.style.display = "none"
   }
@@ -35,7 +35,7 @@ function mouseout(element){
 
 const options = {
   root: null,
-  threshold: 0.2
+  threshold: 0.5
 }
 
 const observer = new IntersectionObserver(function(entries,observer){
@@ -50,7 +50,7 @@ const observer = new IntersectionObserver(function(entries,observer){
       current_dict['current'] = entry.target
       element = document.getElementById(current_dict['current'].id+"-icon")
       mouseover(element)
-      if (current_dict['prev_current'] == undefined) {
+      if (current_dict['prev_current'] === undefined) {
         current_dict['prev_current'] = element
       } else if (current_dict['prev_current'] !== element && current_dict['prev_current'] !== undefined) {
         mouseout(current_dict['prev_current'])
