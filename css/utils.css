@@ -12,7 +12,7 @@ body{
 }
 
 section{
-  margin-left: 8vw;
+  margin-left: 6vw;
   scroll-snap-align: start;
   height: 100vh;
 }
