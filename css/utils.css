@@ -15,7 +15,6 @@ body{
 }
 
 section{
-  margin-left: 6vw;
   scroll-snap-align: start;
   height: 100vh;
 }
@@ -25,7 +24,7 @@ html {
 }
 
 ::-webkit-scrollbar{
-  width: 15px;
+  width: 1vw;
 }
 ::-webkit-scrollbar-track{
   background: #212121;

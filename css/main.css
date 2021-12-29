@@ -30,16 +30,20 @@ footer p{
 
 nav {
   position: fixed;
-  z-index: 1;
-  top: 0;
-  left: 0;
-  width: 6vw;
+  top: 0%;
+  width: 5vw;
   background-color: #212121;
-  height: 100vh;
+  height: max-content;
   display: flex;
-  align-items: center;
+  align-items: baseline;
+  justify-content: center;
   transition: 200ms ease;
-  padding-left: 1vw;
+  transition-delay: 100ms;
+  border-radius: 100vw;
+  margin-block: .5em;
+  margin: 1vw;
+  box-shadow: 0px 0px 35px 10px rgb(0 0 0 / 50%);
+  transform: translateX(-150px);
 }
 nav li{
   display: flex;
@@ -47,7 +51,7 @@ nav li{
   align-items: center;
   border-radius: 10px;
   cursor: pointer;
-  transition: 200ms ease;
+  transition: 100ms ease;
   transition-delay: 300ms;
   /* border: .1em solid var(--theme) */
 }
@@ -55,10 +59,11 @@ nav li{
 nav li.exc{
   width: 0px;
   height:0px;
-  padding: 4vh 9px;
-  margin: 5vh 5px 5vh 10px;
+  padding: 5.75vh 2vw;
+  margin: 4vh 0px 4vh 0px;
   transition: 200ms ease;
   transition-delay: 50ms;
+  border-radius: 2em;
 }
 
 nav li:nth-child(1){
@@ -88,12 +93,13 @@ nav a{
   font-size: 10px;
   color: #dedede;
   padding: 3px;
-  display: none;
+  display: block;
   transition: 500ms;
   transition-delay: 1s;
 }
 nav img{
-  width: 50px;
+  width: 40px;
+  transition: 100ms;
 }
 
 /* nav li:hover {
@@ -124,32 +130,32 @@ h2{
 
 section#home{
   background-color: #212121;
-  width: calc(100vw- 6vw)
+  width: calc(100vw- 1vw);
 }
 
 section#AI{
-  width: calc(100vw- 6vw);
+  width: calc(100vw- 1vw);
   background-color: var(--AIcolor);
 }
 
 section#internet{
   background-color: var(--internetcolor);
-  width: calc(100vw- 6vw);
+  width: calc(100vw- 1vw);
 }
 
 section#translation{
   background-color: var(--transitioncolor);
-  width: calc(100vw- 6vw);
+  width: calc(100vw- 1vw);
 }
 
 section#money{
   background-color: var(--moneycolor);
-  width: calc(100vw- 6vw);
+  width: calc(100vw- 1vw);
 }
 
 section#cloud{
   background-color: var(--cloudcolor);
-  width: calc(100vw- 6vw);
+  width: calc(100vw- 1vw);
 }
 
 .anchors{

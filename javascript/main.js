@@ -16,22 +16,26 @@ function scroll(element) {
 }
 
 function mouseover(element){
-  element.style.padding = "6vh 3vw"
-  element.style.margin = "4vh 0px 5vh 0px"
-  let sub = element.firstElementChild
-  sub.style.display = "block"
+  element.style.borderRadius = "10px"
+  let sub = element.firstElementChild.firstElementChild
+  sub.style.width = "50px"
 }
 function mouseout(element){
   if (element.id === current_dict['current'].id+'-icon') {
     return
   }else {
-    element.style.width = "0px"
-    element.style.height = "0px"
-    element.style.padding = "4vh 9px"
-    element.style.margin = "5vh 5px 5vh 10px"
-    let sub = element.firstElementChild
-    sub.style.display = "none"
+    element.style.borderRadius = "2em"
+    let sub = element.firstElementChild.firstElementChild
+    sub.style.width = "40px"
   }
+}
+
+function navOut(){
+  navbar.style.transform = "translateX(-150px)"
+}
+
+function navIn(){
+  navbar.style.transform = "translateX(0px)"
 }
 
 const options = {
@@ -45,9 +49,13 @@ const observer = new IntersectionObserver(function(entries,observer){
       if (current_dict['prev_current'] !== undefined) {
         current_dict['prev_current'] = element
       }
-      let colour = window.getComputedStyle(entry.target).backgroundColor
-      // let colour = entry.target.style.backgroundColor
-      navbar.style.backgroundColor = colour;
+      // let colour = window.getComputedStyle(entry.target).backgroundColor
+      // navbar.style.backgroundColor = colour;
+      if (entry.target.id !== "home"){
+        navIn()
+      }else {
+        navOut()
+      }
       current_dict['current'] = entry.target
       element = document.getElementById(current_dict['current'].id+"-icon")
       mouseover(element)
