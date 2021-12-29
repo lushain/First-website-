@@ -1,3 +1,6 @@
+:root{
+  --theme: #d1385a;
+}
 
 .flex-all-center{
   display: flex;
@@ -21,18 +24,18 @@ html {
   scroll-snap-type: y mandatory;
 }
 
-body::-webkit-scrollbar{
-  width: 11px;
+::-webkit-scrollbar{
+  width: 15px;
 }
-body::-webkit-scrollbar-track{
+::-webkit-scrollbar-track{
   background: #212121;
 }
-body::-webkit-scrollbar-thumb{
-  background: #7c838f;
-  border-radius: 5px;
+::-webkit-scrollbar-thumb{
+  background: var(--theme);
+  border-radius: 100vw;
+  border: .2em solid #212121
 }
 
-body::-webkit-scrollbar-thumb:hover{
+::-webkit-scrollbar-thumb:hover{
   background: #9ba4b3;
-  border-radius: 2px;
 }

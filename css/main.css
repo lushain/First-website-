@@ -2,6 +2,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300&display=swap');
 
+:root{
+  --AIcolor: #F59CA9;
+  --internetcolor: #758BFD;
+  --transitioncolor: #735CDD;
+  --moneycolor: #0075F2;
+  --cloudcolor: #FF4365;
+}
+
 *{
   margin: 0;
   padding: 0;
@@ -29,7 +37,6 @@ nav {
   background-color: #212121;
   height: 100vh;
   display: flex;
-  justify-content: center;
   align-items: center;
   transition: 200ms ease;
   padding-left: 1vw;
@@ -42,6 +49,7 @@ nav li{
   cursor: pointer;
   transition: 200ms ease;
   transition-delay: 300ms;
+  /* border: .1em solid var(--theme) */
 }
 
 nav li.exc{
@@ -58,19 +66,19 @@ nav li:nth-child(1){
 }
 
 nav li:nth-child(2){
-  background-color: #F59CA9;
+  background-color: var(--AIcolor);
 }
 nav li:nth-child(3){
-  background-color: #758BFD;
+  background-color: var(--internetcolor);
 }
 nav li:nth-child(4){
-  background-color: #735CDD;
+  background-color: var(--transitioncolor);
 }
 nav li:nth-child(5){
-  background-color: #0075F2;
+  background-color: var(--moneycolor);
 }
 nav li:nth-child(6){
-  background-color: #FF4365;
+  background-color: var(--cloudcolor);
 }
 
 nav a{
@@ -102,7 +110,7 @@ nav li:hover > *:first-child {
   justify-content: flex-start;
   align-items: flex-start;
   flex-direction: column;
-  padding: 5vh 1vw;
+  padding: 3vh 1vw;
   font-family: 'Fira Sans', sans-serif;
 }
 
@@ -111,7 +119,7 @@ h1{
   font-size: 3em;
 }
 h2{
-  color: #d1385a
+  color: var(--theme)
 }
 
 section#home{
@@ -121,28 +129,115 @@ section#home{
 
 section#AI{
   width: calc(100vw- 6vw);
-  background-color: #F59CA9;
+  background-color: var(--AIcolor);
 }
 
-
 section#internet{
-  background-color: #758BFD;
+  background-color: var(--internetcolor);
   width: calc(100vw- 6vw);
 }
 
 section#translation{
-  background-color: #735CDD;
+  background-color: var(--transitioncolor);
   width: calc(100vw- 6vw);
 }
-
 
 section#money{
-  background-color: #0075F2;
+  background-color: var(--moneycolor);
   width: calc(100vw- 6vw);
 }
 
-
 section#cloud{
-  background-color: #FF4365;
+  background-color: var(--cloudcolor);
   width: calc(100vw- 6vw);
+}
+
+.anchors{
+  display: flex;
+  justify-content: center;
+}
+
+.anchors a{
+  border: 0.25em solid var(--theme);
+  color: #bfbfbf;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 2rem;
+  margin: 1vw;
+  height: 12rem;
+  width: 11.5rem;
+  border-radius: 3vw;
+  cursor: pointer;
+  box-shadow: 0 0 2.5em 0 var(--theme),
+    0 34px 12px 0 rgba(0, 0, 0, 0.19);
+}
+.anchors span{
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 2rem;
+}
+
+.anchors img{
+  width: 5em;
+}
+
+.anchors a:nth-child(2), .anchors a:nth-child(4){
+  margin-top: 40vh;
+}
+
+
+.anchors a:nth-child(1){
+  border: 0.25em solid var(--AIcolor);
+  box-shadow: 0 0 1.5em 0px var(--AIcolor), 0 5px 13px 14px rgba(0, 0, 0, .5);
+  transition: 100ms;
+}
+.anchors a:nth-child(1):hover {
+    color: black;
+    box-shadow: 0 0 3.5em 0px var(--AIcolor), 0 5px 13px 14px rgba(0, 0, 0, .5);
+    background-color: var(--AIcolor);
+}
+
+.anchors a:nth-child(2){
+  border: 0.25em solid var(--internetcolor);
+  box-shadow: 0 0 1.5em 0px var(--internetcolor), 0 5px 13px 14px rgba(0, 0, 0, .5);
+  transition: 100ms;
+}
+.anchors a:nth-child(2):hover {
+    color: black;
+    box-shadow: 0 0 3.5em 0px var(--internetcolor), 0 5px 13px 14px rgba(0, 0, 0, .5);
+    background-color: var(--internetcolor);
+}
+
+.anchors a:nth-child(3){
+  border: 0.25em solid var(--transitioncolor);
+  box-shadow: 0 0 1.5em 0px var(--transitioncolor), 0 5px 13px 14px rgba(0, 0, 0, .5);
+  transition: 100ms;
+}
+.anchors a:nth-child(3):hover {
+    /* color: black; */
+    box-shadow: 0 0 3.5em 0px var(--transitioncolor), 0 5px 13px 14px rgba(0, 0, 0, .5);
+    background-color: var(--transitioncolor);
+}
+
+.anchors a:nth-child(4){
+  border: 0.25em solid var(--moneycolor);
+  box-shadow: 0 0 1.5em 0px var(--moneycolor), 0 5px 13px 14px rgba(0, 0, 0, .5);
+  transition: 100ms;
+}
+.anchors a:nth-child(4):hover {
+    /* color: black; */
+    box-shadow: 0 0 3.5em 0px var(--moneycolor), 0 5px 13px 14px rgba(0, 0, 0, .5);
+    background-color: var(--moneycolor);
+}
+
+.anchors a:nth-child(5){
+  border: 0.25em solid var(--cloudcolor);
+  box-shadow: 0 0 1.5em 0px var(--cloudcolor), 0 5px 13px 14px rgba(0, 0, 0, .5);
+  transition: 100ms;
+}
+.anchors a:nth-child(5):hover {
+    /* color: black; */
+    box-shadow: 0 0 3.5em 0px var(--cloudcolor), 0 5px 13px 14px rgba(0, 0, 0, .5);
+    background-color: var(--cloudcolor);
 }

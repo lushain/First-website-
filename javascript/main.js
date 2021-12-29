@@ -1,4 +1,5 @@
-const elems = document.getElementsByClassName("nav-icon");
+const elems = document.getElementsByClassName("scroll-icon");
+const nav = document.getElementsByClassName("exc");
 const sections = document.getElementsByTagName('section');
 const navbar = document.getElementById('nav-bar');
 let element = null
@@ -67,7 +68,7 @@ Array.from(elems).forEach(element => {
   element.onclick = function() {scroll(element)};
 });
 
-Array.from(elems).forEach(element => {
+Array.from(nav).forEach(element => {
   element.onmouseover = function() {mouseover(element)};
   element.onmouseout = function() {mouseout(element)};
 });
