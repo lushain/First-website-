@@ -49,8 +49,8 @@ const observer = new IntersectionObserver(function(entries,observer){
       if (current_dict['prev_current'] !== undefined) {
         current_dict['prev_current'] = element
       }
-      // let colour = window.getComputedStyle(entry.target).backgroundColor
-      // navbar.style.backgroundColor = colour;
+      let colour = window.getComputedStyle(entry.target).backgroundColor
+      navbar.style.backgroundColor = colour;
       if (entry.target.id !== "home"){
         navIn()
       }else {
