@@ -16,7 +16,8 @@ function scroll(element) {
 }
 
 function mouseover(element){
-  element.style.borderRadius = "10px"
+  // element.style.borderRadius = "10px"
+  element.style.backgroundColor = "var(--theme)"
   let sub = element.firstElementChild.firstElementChild
   sub.style.width = "50px"
 }
@@ -24,7 +25,8 @@ function mouseout(element){
   if (element.id === current_dict['current'].id+'-icon') {
     return
   }else {
-    element.style.borderRadius = "2em"
+    // element.style.borderRadius = "2em"
+    element.style.backgroundColor = "var(--home)"
     let sub = element.firstElementChild.firstElementChild
     sub.style.width = "40px"
   }

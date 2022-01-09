@@ -3,6 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300&display=swap');
 
 /* :root{
+  --home: #212121;
   --AIcolor: #F59CA9;
   --internetcolor: #758BFD;
   --transitioncolor: #735CDD;
@@ -11,7 +12,8 @@
 } */
 
 :root{
-  --AIcolor:#212121;
+  --home: #212121;
+  --AIcolor: #212121;
   --internetcolor: #212121;
   --transitioncolor: #212121;
   --moneycolor: #212121;
@@ -137,7 +139,7 @@ h2{
 }
 
 section#home{
-  background-color: #212121;
+  background-color: var(--home);
   width: calc(100vw- 1vw);
 }
 
@@ -200,56 +202,56 @@ section#cloud{
 }
 
 .anchors a:nth-child(1){
-  border: 0.25em solid var(--AIcolor);
-  box-shadow: 0 0 1.5em 0px var(--AIcolor), 0 5px 13px 14px rgba(0, 0, 0, .5);
+  border: 0.25em solid var(--theme);
+  box-shadow: 0 0 1.5em 0px var(--theme), 0 5px 13px 14px rgba(0, 0, 0, .5);
   transition: 100ms;
 }
 .anchors a:nth-child(1):hover {
-    color: black;
-    box-shadow: 0 0 3.5em 0px var(--AIcolor), 0 5px 13px 14px rgba(0, 0, 0, .5);
-    background-color: var(--AIcolor);
+    /* color: black; */
+    box-shadow: 0 0 3.5em 0px var(--theme), 0 5px 13px 14px rgba(0, 0, 0, .5);
+    background-color: var(--theme);
 }
 
 .anchors a:nth-child(2){
-  border: 0.25em solid var(--internetcolor);
-  box-shadow: 0 0 1.5em 0px var(--internetcolor), 0 5px 13px 14px rgba(0, 0, 0, .5);
+  border: 0.25em solid var(--theme);
+  box-shadow: 0 0 1.5em 0px var(--theme), 0 5px 13px 14px rgba(0, 0, 0, .5);
   transition: 100ms;
 }
 .anchors a:nth-child(2):hover {
-    color: black;
-    box-shadow: 0 0 3.5em 0px var(--internetcolor), 0 5px 13px 14px rgba(0, 0, 0, .5);
-    background-color: var(--internetcolor);
+    /* color: black; */
+    box-shadow: 0 0 3.5em 0px var(--theme), 0 5px 13px 14px rgba(0, 0, 0, .5);
+    background-color: var(--theme);
 }
 
 .anchors a:nth-child(3){
-  border: 0.25em solid var(--transitioncolor);
-  box-shadow: 0 0 1.5em 0px var(--transitioncolor), 0 5px 13px 14px rgba(0, 0, 0, .5);
+  border: 0.25em solid var(--theme);
+  box-shadow: 0 0 1.5em 0px var(--theme), 0 5px 13px 14px rgba(0, 0, 0, .5);
   transition: 100ms;
 }
 .anchors a:nth-child(3):hover {
     /* color: black; */
-    box-shadow: 0 0 3.5em 0px var(--transitioncolor), 0 5px 13px 14px rgba(0, 0, 0, .5);
-    background-color: var(--transitioncolor);
+    box-shadow: 0 0 3.5em 0px var(--theme), 0 5px 13px 14px rgba(0, 0, 0, .5);
+    background-color: var(--theme);
 }
 
 .anchors a:nth-child(4){
-  border: 0.25em solid var(--moneycolor);
-  box-shadow: 0 0 1.5em 0px var(--moneycolor), 0 5px 13px 14px rgba(0, 0, 0, .5);
+  border: 0.25em solid var(--theme);
+  box-shadow: 0 0 1.5em 0px var(--theme), 0 5px 13px 14px rgba(0, 0, 0, .5);
   transition: 100ms;
 }
 .anchors a:nth-child(4):hover {
     /* color: black; */
-    box-shadow: 0 0 3.5em 0px var(--moneycolor), 0 5px 13px 14px rgba(0, 0, 0, .5);
-    background-color: var(--moneycolor);
+    box-shadow: 0 0 3.5em 0px var(--theme), 0 5px 13px 14px rgba(0, 0, 0, .5);
+    background-color: var(--theme);
 }
 
 .anchors a:nth-child(5){
-  border: 0.25em solid var(--cloudcolor);
-  box-shadow: 0 0 1.5em 0px var(--cloudcolor), 0 5px 13px 14px rgba(0, 0, 0, .5);
+  border: 0.25em solid var(--theme);
+  box-shadow: 0 0 1.5em 0px var(--theme), 0 5px 13px 14px rgba(0, 0, 0, .5);
   transition: 100ms;
 }
 .anchors a:nth-child(5):hover {
     /* color: black; */
-    box-shadow: 0 0 3.5em 0px var(--cloudcolor), 0 5px 13px 14px rgba(0, 0, 0, .5);
-    background-color: var(--cloudcolor);
+    box-shadow: 0 0 3.5em 0px var(--theme), 0 5px 13px 14px rgba(0, 0, 0, .5);
+    background-color: var(--theme);
 }

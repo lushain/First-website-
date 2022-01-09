@@ -15,13 +15,13 @@ body{
 }
 
 section{
-  scroll-snap-align: start;
+  /* scroll-snap-align: start; */
   height: 100vh;
 }
 
-html {
+/* html {
   scroll-snap-type: y mandatory;
-}
+} */
 
 ::-webkit-scrollbar{
   width: 1vw;
